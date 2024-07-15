@@ -1,6 +1,6 @@
-package com.example.service;
+package com.example.PracticeUser.service;
 
-import com.example.model.User;
+import com.example.PracticeUser.model.User;
 
 public interface IUserService {
     User saveUser(User user);

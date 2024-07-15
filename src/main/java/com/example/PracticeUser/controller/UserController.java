@@ -1,7 +1,7 @@
-package com.example.controller;
+package com.example.PracticeUser.controller;
 
-import com.example.model.User;
-import com.example.service.IUserService;
+import com.example.PracticeUser.model.User;
+import com.example.PracticeUser.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -15,7 +15,7 @@ public class UserController {
     private IUserService userService;
 
     @PostMapping("/save")
-    public ResponseEntity<User> addUser(User user) {
+    public ResponseEntity<User> addUser(@RequestBody User user) {
         User userObj = userService.saveUser(user);
         return new ResponseEntity<>(userObj, HttpStatus.OK);
     }

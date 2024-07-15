@@ -1,7 +1,7 @@
-package com.example.service;
+package com.example.PracticeUser.service;
 
-import com.example.model.User;
-import com.example.repository.UserRepository;
+import com.example.PracticeUser.model.User;
+import com.example.PracticeUser.repository.UserRepository;
 import jakarta.transaction.Transactional;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

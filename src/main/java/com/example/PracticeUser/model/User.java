@@ -1,13 +1,15 @@
-package com.example.model;
+package com.example.PracticeUser.model;
 
 
 import jakarta.persistence.*;
 import lombok.*;
 
 @Entity
-@Table(name="users")
+@Data
+@Table(name="usuarios")
 @NoArgsConstructor
 @AllArgsConstructor
+@Builder
 @Getter
 @Setter
 @ToString
